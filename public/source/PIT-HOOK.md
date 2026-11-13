@@ -6,7 +6,7 @@ Shaka expanded scope on 12 Nov 2026: **ZuChiangMai PIT lives inside `zuchiangmai
 
 - Source mount reserved for the PIT engineer: `/workspace/new-doors-scope/zu-app-src/pit/`
 - Generated preview mount reserved for that engineer: `/shared/public/zu-chiangmai/pit/`
-- Future production route: `https://zuchiangmai.app/pit/` (not deployed or DNS-changed here)
+- Current production route: `https://zuchiangmai.app/pit/` (officially deployed; preview remains noindex)
 - Preview route: `/pit/` relative to the hosted `zu-chiangmai` preview root
 
 The generator intentionally avoids a blanket delete of the output directory. It never reads, creates, removes, or overwrites either PIT path. If `/shared/public/zu-chiangmai/pit/` already exists at build time, it is preserved.

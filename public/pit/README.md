@@ -1,6 +1,6 @@
 # ZuChiangMai `/pit/` — native in-app memory room
 
-This is the first native PIT module for the ZuChiangMai field guide: **generation 3, forked from the public 4SeasPIT repository**. It is mounted at same-origin `/pit/`, not an iframe and not a new PIT hostname. No registry number or CNAME is invented. The preview is `noindex,nofollow,noarchive`; nothing here deploys to `zuchiangmai.app`.
+This is the first native PIT module for the ZuChiangMai field guide: **generation 3, forked from the public 4SeasPIT repository**. It is mounted at same-origin `/pit/`, not an iframe and not a new PIT hostname. No registry number is invented. **Official production:** https://zuchiangmai.app/pit/ with canonical metadata and indexing enabled. The taur.link preview remains `noindex,nofollow,noarchive`.
 
 ## What ships
 

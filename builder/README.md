@@ -51,14 +51,14 @@ This re-fetches public sources, sanitizes them in memory, and emits:
 - `index.html` — complete no-JS agenda, 16-milestone ETH + Longevity rail, details, source links, notices, ETH empty state, and PIT links
 - `schedule.json` — sanitized static fallback
 - `app.js`, `styles.css` — first-party progressive enhancement; local `favicon.svg` and multi-size `favicon.ico`
-- `photos/` — eight curated, already-public 4Seas memory images at 480/960px; provenance in `data/hero-photos.json` and `/licenses/#photo-sources`
+- `photos/` — sixteen curated, already-public 4Seas community images at 480/960px; provenance in `data/hero-photos.json` and `/licenses/#photo-sources`
 - `ics/<source>-<id>.ics` — an individual downloadable calendar per current event, including no-JS access
 - `licenses/`, `source/` — license statement and corresponding source offer
 - `robots.txt` + meta noindex for the preview
 
 Initial HTML always says **SOURCE SNAPSHOT** until a refresh completes. The client attempts the deployed fixed Worker on manual refresh or roughly every 120 seconds while visible. A schema-valid, non-stale Worker response with every source OK is required for **LIVE · READ-ONLY PROXY**. Network/schema/origin failures keep the current snapshot/last-good data and visibly remove Live. Source fetch and browser render timestamps are separate.
 
-The first-page hero uses a bounded two-frame/two-backdrop **1.5-second non-repeating shuffle** of eight already-public 4Seas photographs. The first road/ukulele photograph is the no-JS and reduced-motion static fallback. Reduced-motion downloads no extra photo set and hides the motion control; no-JS keeps the complete agenda and one photograph. A visible Pause/Resume control, hidden-tab and offscreen pausing, decorative alt handling, local WebP assets, and per-photo source links are included. No private-Drive, new NOMAD or child imagery is introduced; public availability is not presented as a new consent claim.
+The first-page hero uses a two-frame/two-backdrop **2.4-second gentle continuous shuffle** of sixteen already-public 4Seas community photographs. The first road/ukulele photograph is the no-JS and reduced-motion static fallback. Reduced-motion downloads no extra photo set and hides the motion control; no-JS keeps the complete agenda and one photograph. A visible Pause/Resume control, hidden-tab and offscreen pausing, decorative alt handling, local WebP assets, and per-photo source links are included. No private-Drive, new NOMAD or child imagery is introduced; public availability is not presented as a new consent claim.
 
 ## Worker deployment status / future parent review
 

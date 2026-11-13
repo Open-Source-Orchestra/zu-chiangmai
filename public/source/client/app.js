@@ -450,7 +450,7 @@
     const scheduleNext = () => {
       clearTimeout(timer);
       if (paused || document.hidden || !inView) return;
-      timer = setTimeout(() => { show(nextIndex()); scheduleNext(); }, 1500);
+      timer = setTimeout(() => { show(nextIndex()); scheduleNext(); }, 2400);
     };
     toggle.addEventListener("click", () => {
       paused = !paused;
@@ -462,7 +462,7 @@
     if ("IntersectionObserver" in window) {
       new IntersectionObserver(([entry]) => { inView = entry.isIntersecting; scheduleNext(); }, { threshold: 0.04 }).observe(hero);
     }
-    // Preload the small local set so fast transitions do not flash empty frames.
+    // Preload the community set so fast transitions do not flash empty frames.
     const preload = photos.map((photo) => new Promise((resolve) => {
       const image = new Image();
       image.onload = resolve;
