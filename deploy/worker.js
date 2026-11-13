@@ -1,6 +1,7 @@
 export default {
   async fetch(request, env) {
-    const url = new URL(request.url());
+    const requestUrl = typeof request.url === 'function' ? request.url() : request.url;
+    const url = new URL(requestUrl);
     if (url.hostname === 'www.zuchiangmai.app' || url.protocol === 'http:') {
       url.hostname = 'zuchiangmai.app';
       url.protocol = 'https:';
