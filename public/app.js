@@ -396,8 +396,14 @@
     const hero = $("[data-photo-hero]");
     const data = $("#photo-data");
     if (!hero || !data) return;
-    const photos = JSON.parse(data.textContent);
-    if (!Array.isArray(photos) || photos.length < 2) return;
+    const photoData = JSON.parse(data.textContent);
+    if (!Array.isArray(photoData) || photoData.length < 2) return;
+    const photos = photoData.map((photo) => ({
+      ...photo,
+      src: photo.src || `./photos/${photo.id}-960.webp`,
+      small: photo.small || `./photos/${photo.id}-480.webp`,
+      sourcePage: photo.sourcePage || photo.source_page,
+    }));
     const frames = $$('[data-photo-frame]');
     const backdrops = $$('[data-photo-bg]');
     const title = $("[data-photo-title]");
