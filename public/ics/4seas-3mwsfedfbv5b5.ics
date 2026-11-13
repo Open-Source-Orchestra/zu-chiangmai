@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ZU Chiang Mai//Public Field Guide//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
+BEGIN:VEVENT
+UID:event-3mwsfedfbv5b5@app.sola.day
+DTSTAMP:20261113T050438Z
+DTSTART:20261122T030000Z
+DTEND:20261122T050000Z
+SUMMARY:Bring-a-Book Reading Club
+LOCATION:Zuzalu Library Event Space - 1st Floor\, Building F
+STATUS:CONFIRMED
+URL:https://sola.day/event/detail/3mwsfedfbv5b5
+X-ZU-SOURCE:4seas
+END:VEVENT
+END:VCALENDAR

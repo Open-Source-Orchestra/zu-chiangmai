@@ -1,0 +1,10 @@
+CC0 1.0 Universal dedication — ZuChiangMai in-app PIT module
+
+To the extent possible under law, contributors to this module waive copyright and related or neighboring rights in its NEW original interface wording and NEW original abstract lantern/ridge SVG composition under CC0 1.0 Universal.
+
+Canonical legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Human-readable summary: https://creativecommons.org/publicdomain/zero/1.0/
+
+This dedication DOES NOT cover third-party recordings, voices, performances, transcripts, titles, source-provided summaries/credits, photographs, posters, logos, trademarks, community memories, or other existing 4SeasPIT / ETHChiangmai / 4Seas material. Those remain with their respective owners and retain their existing source rights, consent requirements, and takedown process. Public availability is not presented as a blanket CC0 license or proof of perpetual consent.
+
+Original software is separately offered under GPL-3.0-or-later; see LICENSE.txt.

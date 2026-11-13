@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ZU Chiang Mai//Public Field Guide//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
+BEGIN:VEVENT
+UID:event-3mqoo2oyi74gc@app.sola.day
+DTSTAMP:20261113T050438Z
+DTSTART:20261130T030000Z
+DTEND:20261130T040000Z
+SUMMARY:AI for Women: Create\, Learn & Connect - AI Goddesses Meetup Chiang
+  Mai
+LOCATION:Event Space - 1st Floor 4Seas Nimman
+STATUS:CONFIRMED
+URL:https://sola.day/event/detail/3mqoo2oyi74gc
+X-ZU-SOURCE:4seas
+END:VEVENT
+END:VCALENDAR

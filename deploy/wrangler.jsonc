@@ -1,0 +1,23 @@
+{
+  "name": "zu-chiangmai-site",
+  "compatibility_date": "2026-11-13",
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "zuchiangmai.app",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.zuchiangmai.app",
+      "custom_domain": true
+    }
+  ],
+  "observability": {
+    "enabled": false
+  },
+  "assets": {
+    "directory": "/workspace/zu-chiangmai/public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

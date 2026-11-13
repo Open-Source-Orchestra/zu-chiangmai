@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ZU Chiang Mai//Public Field Guide//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
+BEGIN:VEVENT
+UID:event-3mzwu3worbyir@app.sola.day
+DTSTAMP:20261113T050438Z
+DTSTART:20261231T043000Z
+DTEND:20261231T060000Z
+SUMMARY:Intro to Zen and Zen Meditation practice | weekly
+LOCATION:Zuzalu Library Event Space - 3rd Floor\, Building F
+STATUS:CONFIRMED
+URL:https://sola.day/event/detail/3mzwu3worbyir
+X-ZU-SOURCE:4seas
+END:VEVENT
+END:VCALENDAR

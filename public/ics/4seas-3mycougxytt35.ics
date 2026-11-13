@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ZU Chiang Mai//Public Field Guide//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
+BEGIN:VEVENT
+UID:event-3mycougxytt35@app.sola.day
+DTSTAMP:20261113T050438Z
+DTSTART:20261124T110000Z
+DTEND:20261124T130000Z
+SUMMARY:HeartSpace — every other Tuesday\, an evening in presence & conne
+ ction
+LOCATION:Zuzalu Library Event Space - 1st Floor\, Building F
+STATUS:CONFIRMED
+URL:https://sola.day/event/detail/3mycougxytt35
+X-ZU-SOURCE:4seas
+END:VEVENT
+END:VCALENDAR

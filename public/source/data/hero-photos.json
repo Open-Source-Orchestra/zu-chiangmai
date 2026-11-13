@@ -1,0 +1,58 @@
+[
+  {
+    "id": "road",
+    "title": "Ukulele circle at ShanHaiWoo",
+    "source_url": "https://raw.githubusercontent.com/shakaleikaumaka/4seas-gift/5749691/assets/drive/road-1280.webp",
+    "source_page": "https://github.com/shakaleikaumaka/4seas-gift/tree/5749691",
+    "position": "50% 42%"
+  },
+  {
+    "id": "memory",
+    "title": "A quiet instrument circle",
+    "source_url": "https://raw.githubusercontent.com/shakaleikaumaka/4seas-gift/5749691/assets/drive/memory-1280.webp",
+    "source_page": "https://github.com/shakaleikaumaka/4seas-gift/tree/5749691",
+    "position": "50% 28%"
+  },
+  {
+    "id": "gift",
+    "title": "Music and shared instruments at 4Seas",
+    "source_url": "https://raw.githubusercontent.com/shakaleikaumaka/4seas-gift/5749691/assets/drive/gift-1280.webp",
+    "source_page": "https://github.com/shakaleikaumaka/4seas-gift/tree/5749691",
+    "position": "50% 50%"
+  },
+  {
+    "id": "circle",
+    "title": "The 4Seas community in full circle",
+    "source_url": "https://raw.githubusercontent.com/shakaleikaumaka/4seas-gift/5749691/assets/drive/circle-1280.webp",
+    "source_page": "https://github.com/shakaleikaumaka/4seas-gift/tree/5749691",
+    "position": "50% 48%"
+  },
+  {
+    "id": "code",
+    "title": "Builders learning together",
+    "source_url": "https://raw.githubusercontent.com/shakaleikaumaka/4seas-gift/5749691/assets/drive/code-1280.webp",
+    "source_page": "https://github.com/shakaleikaumaka/4seas-gift/tree/5749691",
+    "position": "50% 50%"
+  },
+  {
+    "id": "dj",
+    "title": "Lantern-lit 4SeasPIT DJ session",
+    "source_url": "https://4seaspit.com/thumbs/1GjVxbNsCYs4N091LCk6f3dNP8Wzg54Dx.jpg",
+    "source_page": "https://4seaspit.com/pit/",
+    "position": "50% 50%"
+  },
+  {
+    "id": "stage",
+    "title": "A voice at the ETHChiangmai room",
+    "source_url": "https://4seaspit.com/thumbs/1JivZiM76yBwcvdwtugKiXJGnPy55VabU.jpg",
+    "source_page": "https://4seaspit.com/pit/",
+    "position": "50% 45%"
+  },
+  {
+    "id": "guitar",
+    "title": "Guitar and piano at the 4SeasPIT",
+    "source_url": "https://4seaspit.com/thumbs/1_OU0RoVV2YpGr1nyNmc9tk7N7Py_UJ3H.jpg",
+    "source_page": "https://4seaspit.com/pit/",
+    "position": "50% 45%"
+  }
+]

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ZU Chiang Mai//Public Field Guide//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
+BEGIN:VEVENT
+UID:event-3mxtsxmmv4u35@app.sola.day
+DTSTAMP:20261113T050438Z
+DTSTART:20270129T073000Z
+DTEND:20270129T103000Z
+SUMMARY:Tea & Coworking — House of Tea
+LOCATION:Gallery Space - 1st Floor 4Seas Nimman
+STATUS:CONFIRMED
+URL:https://sola.day/event/detail/3mxtsxmmv4u35
+X-ZU-SOURCE:4seas
+END:VEVENT
+END:VCALENDAR
