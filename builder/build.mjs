@@ -128,20 +128,38 @@ async function main() {
   schedule.programs = programs;
   validateSchedule(schedule);
 
+  // ZU_PRODUCTION=1 → the exact production flavour served at https://zuchiangmai.app/
+  // (indexable, canonical + Open Graph, robots Allow + sitemap). Default = noindex preview.
+  const production = process.env.ZU_PRODUCTION === "1";
+  const today = fetchedAt.slice(0, 10);
+  let indexHtml = renderPage(schedule, heroPhotos);
+  if (production) {
+    const og = `<link rel="canonical" href="https://zuchiangmai.app/">\n  <meta property="og:type" content="website"><meta property="og:url" content="https://zuchiangmai.app/"><meta property="og:title" content="ZU / CHIANG MAI — Living Field Guide"><meta property="og:description" content="Public gatherings around 4Seas, the ETHChiangmai season, and paths into community memory."><meta property="og:image" content="https://zuchiangmai.app/photos/${heroPhotos[0].id}-1440.webp">\n  <meta name="zu:pit-module"`;
+    const before = indexHtml;
+    indexHtml = indexHtml
+      .replace('<meta name="robots" content="noindex,nofollow">', '<meta name="robots" content="index,follow">')
+      .replace('<meta name="zu:pit-module"', og)
+      .replace("Rendered by this static preview;", "Rendered by this static production bundle;");
+    if (indexHtml === before || !indexHtml.includes("og:image") || !indexHtml.includes("index,follow")) throw new Error("Production meta splice failed");
+  }
+  const robotsTxt = production ? "User-agent: *\nAllow: /\n\nSitemap: https://zuchiangmai.app/sitemap.xml\n" : "User-agent: *\nDisallow: /\n";
+  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://zuchiangmai.app/</loc><lastmod>${today}</lastmod></url>\n  <url><loc>https://zuchiangmai.app/pit/</loc><lastmod>${today}</lastmod></url>\n</urlset>\n`;
+
   await mkdir(output, { recursive: true });
   await mkdir(path.join(output, "licenses"), { recursive: true });
   await rm(path.join(output, "ics"), { recursive: true, force: true });
   await rm(path.join(output, "photos"), { recursive: true, force: true });
   await mkdir(path.join(output, "ics"), { recursive: true });
   await Promise.all([
-    writeFile(path.join(output, "index.html"), renderPage(schedule, heroPhotos)),
+    writeFile(path.join(output, "index.html"), indexHtml),
+    ...(production ? [writeFile(path.join(output, "sitemap.xml"), sitemapXml)] : []),
     writeFile(path.join(output, "schedule.json"), `${JSON.stringify(schedule, null, 2)}\n`),
     writeFile(path.join(output, "app.js"), await readFile(path.join(root, "client/app.js"), "utf8")),
     writeFile(path.join(output, "styles.css"), await readFile(path.join(root, "client/styles.css"), "utf8")),
     cp(path.join(root, "client/photos"), path.join(output, "photos"), { recursive: true }),
     readFile(path.join(root, "client/favicon.svg")).then((data) => writeFile(path.join(output, "favicon.svg"), data)),
     readFile(path.join(root, "client/favicon.ico")).then((data) => writeFile(path.join(output, "favicon.ico"), data)),
-    writeFile(path.join(output, "robots.txt"), "User-agent: *\nDisallow: /\n"),
+    writeFile(path.join(output, "robots.txt"), robotsTxt),
     ...schedule.events.map((event) => writeFile(path.join(output, "ics", eventFileName(event)), eventToIcs(event, schedule.generated_at))),
   ]);
   const photoCredits = heroPhotos.map((photo) => `<li><strong>${escapeHtml(photo.title)}</strong> · ${escapeHtml(photo.original_file)} · captured ${escapeHtml(photo.captured)} · ${escapeHtml(photo.credit)} · ${escapeHtml(photo.license)}</li>`).join("");
