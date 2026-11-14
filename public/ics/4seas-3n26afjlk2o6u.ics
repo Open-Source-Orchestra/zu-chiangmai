@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ZU Chiang Mai//Public Field Guide//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
+BEGIN:VEVENT
+UID:event-3n26afjlk2o6u@app.sola.day
+DTSTAMP:20261114T072431Z
+DTSTART:20261120T060000Z
+DTEND:20261120T073000Z
+SUMMARY:Idea to App: A 2-Day Build Workshop with Claude (Day 2)
+LOCATION:Conference Room - 3rd Floor 4Seas Nimman
+STATUS:CONFIRMED
+URL:https://sola.day/event/detail/3n26afjlk2o6u
+X-ZU-SOURCE:4seas
+END:VEVENT
+END:VCALENDAR

@@ -5,14 +5,14 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
 BEGIN:VEVENT
-UID:event-3s2y2qz7muazn@app.sola.day
-DTSTAMP:20261113T050438Z
-DTSTART:20261113T040000Z
-DTEND:20261113T060000Z
-SUMMARY:Language & Culture Exchange
+UID:event-3mzcpokdxnets@app.sola.day
+DTSTAMP:20261114T072431Z
+DTSTART:20261119T120000Z
+DTEND:20261119T140000Z
+SUMMARY:Language Teachers’ Gathering
 LOCATION:Event Space - 1st Floor 4Seas Nimman
 STATUS:CONFIRMED
-URL:https://sola.day/event/detail/3s2y2qz7muazn
+URL:https://sola.day/event/detail/3mzcpokdxnets
 X-ZU-SOURCE:4seas
 END:VEVENT
 END:VCALENDAR

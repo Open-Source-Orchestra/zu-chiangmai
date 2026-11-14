@@ -2,6 +2,21 @@
 
 Independent, mobile-first, read-only public preview for `zuchiangmai.app`. No official umbrella/voice or endorsement is implied. No account, RSVP, write endpoint, analytics, tracker, third-party runtime, external font, or third-party image is used.
 
+## The daily lane (self-updating agenda, since 14 Nov 2026)
+
+Source of truth for *listings* is the live public SocialLayer data (4Seas group browse + ETH self-ICS, below); for the *milestone rail* and *hero photos* it is the reviewed JSON in `data/`. The static bundle in `../public/` is a daily snapshot of both:
+
+| step | command | who runs it |
+|---|---|---|
+| rebuild + diff + fail-closed gate + outbox + commit | `python3 builder/refresh.py` (`--dry-run` to only see the diff) | AGENDA KEEPER 🗓️ at 08:00 Asia/Bangkok, in the shared clone `/shared/agenda-keeper/zu-chiangmai` |
+| deploy + verify + rollback + push | `builder/deploy.sh [--pending-only]` | the Admiral's office only (Cloudflare token stays in its private workspace) |
+| production regression | `node builder/tests/hero-test.mjs https://zuchiangmai.app/ .test-out production` (9 checks) · `node builder/tests/smoke.mjs https://zuchiangmai.app/ .test-out` | deploy.sh after every deploy |
+| hand-off format | `builder/outbox.py` (JSON + Markdown per day; `pending_commit` = waiting for deploy) | both |
+
+`ZU_PRODUCTION=1 node build.mjs <dir>` emits the indexable production flavour (canonical + Open Graph, `robots.txt` Allow, `sitemap.xml`); without the variable the output is the `noindex` preview. `refresh.py` always builds the production flavour and never touches `public/pit/`. Gates: new listing count < 80 % of the previous bundle → exit 3, nothing written; build/parse error → exit 2; `deploy.sh` additionally compares with what production serves and redeploys the last good commit if the post-deploy tests fail.
+
+**Editing in Cursor:** change `data/program-milestones.json` (keep exactly 16 reviewed milestones, `timezone: null` for unconfirmed Devfolio clocks), `data/hero-photos.json` (only the permitted © 4Seas.org frames) or `lib/templates.mjs`, run `python3 builder/refresh.py --dry-run`, commit, push `main`. The keeper's next run includes it; the Admiral deploys. No tokens are needed to build or test.
+
 ## Ownership boundary
 
 This builder owns only:
