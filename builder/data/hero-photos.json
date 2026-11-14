@@ -1,114 +1,178 @@
 [
   {
-    "id": "road",
-    "title": "Ukulele circle at ShanHaiWoo",
-    "source_url": "https://raw.githubusercontent.com/shakaleikaumaka/4seas-gift/5749691/assets/drive/road-1280.webp",
-    "source_page": "https://github.com/shakaleikaumaka/4seas-gift/tree/5749691",
-    "position": "50% 42%"
+    "id": "market-hall",
+    "title": "Nomad Market #1 fills the 4Seas hall",
+    "position": "45% 45%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00450.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "memory",
-    "title": "A quiet instrument circle",
-    "source_url": "https://raw.githubusercontent.com/shakaleikaumaka/4seas-gift/5749691/assets/drive/memory-1280.webp",
-    "source_page": "https://github.com/shakaleikaumaka/4seas-gift/tree/5749691",
-    "position": "50% 28%"
+    "id": "stage-set",
+    "title": "The Nomad Market stage, set and waiting",
+    "position": "50% 50%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00476.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "gift",
-    "title": "Music and shared instruments at 4Seas",
-    "source_url": "https://raw.githubusercontent.com/shakaleikaumaka/4seas-gift/5749691/assets/drive/gift-1280.webp",
-    "source_page": "https://github.com/shakaleikaumaka/4seas-gift/tree/5749691",
-    "position": "50% 50%"
+    "id": "nomad-stair",
+    "title": "Flyers and smiles under the NOMAD banner",
+    "position": "55% 40%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00461.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "circle",
-    "title": "The 4Seas community in full circle",
-    "source_url": "https://raw.githubusercontent.com/shakaleikaumaka/4seas-gift/5749691/assets/drive/circle-1280.webp",
-    "source_page": "https://github.com/shakaleikaumaka/4seas-gift/tree/5749691",
-    "position": "50% 48%"
+    "id": "nomad-flyer",
+    "title": "A flyer, a grin and the NOMAD stair",
+    "position": "50% 40%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00458.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "code",
-    "title": "Builders learning together",
-    "source_url": "https://raw.githubusercontent.com/shakaleikaumaka/4seas-gift/5749691/assets/drive/code-1280.webp",
-    "source_page": "https://github.com/shakaleikaumaka/4seas-gift/tree/5749691",
-    "position": "50% 50%"
+    "id": "peace-signs",
+    "title": "Peace signs at the 4Seas door",
+    "position": "50% 35%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00462.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "dj",
-    "title": "Lantern-lit 4SeasPIT DJ session",
-    "source_url": "https://4seaspit.com/thumbs/1GjVxbNsCYs4N091LCk6f3dNP8Wzg54Dx.jpg",
-    "source_page": "https://4seaspit.com/pit/",
-    "position": "50% 50%"
+    "id": "stage-intro",
+    "title": "Introductions on the Nomad Market stage",
+    "position": "50% 45%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00467.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "stage",
-    "title": "A voice at the ETHChiangmai room",
-    "source_url": "https://4seaspit.com/thumbs/1JivZiM76yBwcvdwtugKiXJGnPy55VabU.jpg",
-    "source_page": "https://4seaspit.com/pit/",
-    "position": "50% 45%"
+    "id": "stage-laugh",
+    "title": "Laughter between talks",
+    "position": "55% 45%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00472.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "guitar",
-    "title": "Guitar and piano at the 4SeasPIT",
-    "source_url": "https://4seaspit.com/thumbs/1_OU0RoVV2YpGr1nyNmc9tk7N7Py_UJ3H.jpg",
-    "source_page": "https://4seaspit.com/pit/",
-    "position": "50% 45%"
+    "id": "stage-host",
+    "title": "Hosting the Nomad Market open mic",
+    "position": "60% 45%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00471.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "opening",
-    "title": "Community opening ceremony",
-    "source_url": "https://4seaspit.com/thumbs/1qTN-ZdKvvK_prl-FOt3lksoWreqjtbjb.jpg",
-    "source_page": "https://4seaspit.com/pit/#session-1qTN-ZdKvvK_prl-FOt3lksoWreqjtbjb",
-    "position": "50% 50%"
+    "id": "mic-builder",
+    "title": "A builder takes the mic",
+    "position": "45% 40%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00478.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "demos",
-    "title": "Builders sharing public demos",
-    "source_url": "https://4seaspit.com/thumbs/1ulwW2HGb4maeNCg27iSlc7AbkIIuHc2e.jpg",
-    "source_page": "https://4seaspit.com/pit/#session-1ulwW2HGb4maeNCg27iSlc7AbkIIuHc2e",
-    "position": "50% 50%"
+    "id": "mic-pitch",
+    "title": "Pitching an idea to the room",
+    "position": "40% 45%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00487.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "summit",
-    "title": "Future Summit at Chiang Mai University",
-    "source_url": "https://4seaspit.com/thumbs/1bCOganv1iUdFQxnAl-XJd4VAIKy03Kbx.jpg",
-    "source_page": "https://4seaspit.com/pit/#session-1bCOganv1iUdFQxnAl-XJd4VAIKy03Kbx",
-    "position": "50% 50%"
+    "id": "mic-smile",
+    "title": "A smile mid-pitch",
+    "position": "45% 40%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00493.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "fairtrade",
-    "title": "Learning how Web3 can support fair trade",
-    "source_url": "https://4seaspit.com/thumbs/1fMucChc-fLtKl_74kmvarky4UG296rJe.jpg",
-    "source_page": "https://4seaspit.com/pit/#session-1fMucChc-fLtKl_74kmvarky4UG296rJe",
-    "position": "50% 50%"
+    "id": "window-light",
+    "title": "Afternoon light at the 4Seas window",
+    "position": "55% 45%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC00474.JPG",
+    "captured": "2026-10-28"
   },
   {
-    "id": "afterhours",
-    "title": "An after-hours community jam",
-    "source_url": "https://4seaspit.com/thumbs/1ENnx6z5rKez3d_AmB8Ych9Nz2vj2LkBj.jpg",
-    "source_page": "https://4seaspit.com/pit/#session-1ENnx6z5rKez3d_AmB8Ych9Nz2vj2LkBj",
-    "position": "50% 50%"
+    "id": "red-curtain",
+    "title": "A talk under the red curtain at 4Seas",
+    "position": "50% 40%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC09952.JPG",
+    "captured": "2026-10-22"
   },
   {
-    "id": "cmu",
-    "title": "Opening ceremony at CMU",
-    "source_url": "https://4seaspit.com/thumbs/1sdsBLqYBuyqmIbd_c1UB9B1x8rtdooAb.jpg",
-    "source_page": "https://4seaspit.com/pit/#session-1sdsBLqYBuyqmIbd_c1UB9B1x8rtdooAb",
-    "position": "50% 50%"
+    "id": "hands-on-hips",
+    "title": "Making the case, hands on hips",
+    "position": "50% 40%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC09959.JPG",
+    "captured": "2026-10-22"
   },
   {
-    "id": "story",
-    "title": "The community learning to tell a good story",
-    "source_url": "https://4seaspit.com/thumbs/1Ln--o_12zGDkPpLHHWjn63ZoIJaxwjnf.jpg",
-    "source_page": "https://4seaspit.com/pit/#session-1Ln--o_12zGDkPpLHHWjn63ZoIJaxwjnf",
-    "position": "50% 50%"
+    "id": "session",
+    "title": "Session in the 4Seas hall",
+    "position": "50% 40%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC09956.JPG",
+    "captured": "2026-10-22"
   },
   {
-    "id": "tuesday",
-    "title": "TogETHer Tuesday, a shared Zuzalu tradition",
-    "source_url": "https://4seaspit.com/thumbs/1zIFeF54BXdHZ41SGmJuZx80p3VDGgSuq.jpg",
-    "source_page": "https://4seaspit.com/pit/#session-1zIFeF54BXdHZ41SGmJuZx80p3VDGgSuq",
-    "position": "50% 50%"
+    "id": "lounge-laptops",
+    "title": "Laptops open in the 4Seas lounge",
+    "position": "50% 50%",
+    "source_page": "./licenses/#photo-sources",
+    "credit": "4Seas / Zuzalu Chiang Mai",
+    "license": "© 4Seas.org — used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026)",
+    "source": "4Seas.org professional album (Sony ZV-E10 II), Google Drive folder shared by Shaka Lei Kaumaka",
+    "original_file": "DSC09993.JPG",
+    "captured": "2026-10-22"
   }
 ]

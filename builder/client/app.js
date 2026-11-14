@@ -402,6 +402,7 @@
       ...photo,
       src: photo.src || `./photos/${photo.id}-960.webp`,
       small: photo.small || `./photos/${photo.id}-480.webp`,
+      large: photo.large || `./photos/${photo.id}-1440.webp`,
       sourcePage: photo.sourcePage || photo.source_page,
     }));
     const frames = $$('[data-photo-frame]');
@@ -438,10 +439,10 @@
       const next = 1 - active;
       const photo = photos[index];
       frames[next].src = photo.src;
-      frames[next].srcset = `${photo.small} 480w, ${photo.src} 960w`;
+      frames[next].srcset = `${photo.small} 480w, ${photo.src} 960w, ${photo.large} 1440w`;
       frames[next].sizes = "(max-width: 900px) 100vw, 50vw";
       frames[next].style.objectPosition = photo.position;
-      backdrops[next].style.backgroundImage = `url("${photo.src}")`;
+      backdrops[next].style.backgroundImage = `url("${photo.large}")`;
       backdrops[next].style.backgroundPosition = photo.position;
       frames[active].classList.remove("is-active");
       backdrops[active].classList.remove("is-active");
@@ -473,7 +474,7 @@
       const image = new Image();
       image.onload = resolve;
       image.onerror = resolve;
-      image.src = photo.src;
+      image.src = window.innerWidth > 900 ? photo.large : photo.src;
     }));
     Promise.race([
       Promise.all(preload),

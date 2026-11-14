@@ -146,8 +146,10 @@ export function renderPage(schedule, heroPhotos = []) {
     title: photo.title,
     src: `./photos/${photo.id}-960.webp`,
     small: `./photos/${photo.id}-480.webp`,
+    large: `./photos/${photo.id}-1440.webp`,
     position: photo.position,
     sourcePage: photo.source_page,
+    credit: photo.credit,
   }))).replace(/</g, "\\u003c");
   const firstPhoto = heroPhotos[0] || { id: "road", title: "4Seas public memory", position: "50% 42%", source_page: "./licenses/#photo-sources" };
   const notices = verificationNotices(schedule);
@@ -165,7 +167,7 @@ export function renderPage(schedule, heroPhotos = []) {
   <link rel="icon" href="./favicon.ico" sizes="48x48">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
-  ${firstPhoto ? `<link rel="preload" as="image" href="./photos/${firstPhoto.id}-960.webp" imagesrcset="./photos/${firstPhoto.id}-480.webp 480w, ./photos/${firstPhoto.id}-960.webp 960w" imagesizes="(max-width: 900px) 100vw, 50vw">` : ""}
+  ${firstPhoto ? `<link rel="preload" as="image" href="./photos/${firstPhoto.id}-960.webp" imagesrcset="./photos/${firstPhoto.id}-480.webp 480w, ./photos/${firstPhoto.id}-960.webp 960w, ./photos/${firstPhoto.id}-1440.webp 1440w" imagesizes="(max-width: 900px) 100vw, 50vw">` : ""}
   <script src="./app.js" defer></script>
 </head>
 <body>
@@ -178,7 +180,7 @@ export function renderPage(schedule, heroPhotos = []) {
   <main id="top">
     <section class="hero photo-hero" aria-labelledby="hero-title" data-photo-hero>
       <div class="hero-backdrop" aria-hidden="true">
-        <div class="hero-backdrop-layer is-active" data-photo-bg style="background-image:url('./photos/${firstPhoto.id}-960.webp');background-position:${firstPhoto.position}"></div>
+        <div class="hero-backdrop-layer is-active" data-photo-bg style="background-image:url('./photos/${firstPhoto.id}-1440.webp');background-position:${firstPhoto.position}"></div>
         <div class="hero-backdrop-layer" data-photo-bg></div>
       </div>
       <div class="hero-copy">
@@ -189,10 +191,10 @@ export function renderPage(schedule, heroPhotos = []) {
         <p class="independence">Built with public sources. Not an official umbrella, organizer voice, or endorsement. Always check the source before setting out.</p>
       </div>
       <div class="hero-art photo-stage" data-photo-stage>
-        <img class="photo-frame is-active" data-photo-frame src="./photos/${firstPhoto.id}-960.webp" srcset="./photos/${firstPhoto.id}-480.webp 480w, ./photos/${firstPhoto.id}-960.webp 960w" sizes="(max-width: 900px) 100vw, 50vw" alt="" fetchpriority="high" decoding="async" style="object-position:${firstPhoto.position}">
+        <img class="photo-frame is-active" data-photo-frame src="./photos/${firstPhoto.id}-960.webp" srcset="./photos/${firstPhoto.id}-480.webp 480w, ./photos/${firstPhoto.id}-960.webp 960w, ./photos/${firstPhoto.id}-1440.webp 1440w" sizes="(max-width: 900px) 100vw, 50vw" alt="" fetchpriority="high" decoding="async" style="object-position:${firstPhoto.position}">
         <img class="photo-frame" data-photo-frame alt="" decoding="async">
         <div class="photo-stage-footer">
-          <a class="photo-caption" data-photo-link href="${escapeHtml(firstPhoto.source_page)}" rel="noopener noreferrer"><span data-photo-title>${escapeHtml(firstPhoto.title)}</span><small>PUBLIC 4SEAS MEMORY ↗</small></a>
+          <a class="photo-caption" data-photo-link href="${escapeHtml(firstPhoto.source_page)}" rel="noopener noreferrer"><span data-photo-title>${escapeHtml(firstPhoto.title)}</span><small>© 4SEAS.ORG · USED WITH PERMISSION ↗</small></a>
           <button class="photo-motion-toggle js-only" data-photo-toggle type="button" aria-pressed="false">Pause photos</button>
         </div>
       </div>

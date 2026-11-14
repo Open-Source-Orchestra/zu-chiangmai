@@ -1,6 +1,6 @@
 # ZU / CHIANG MAI — Living Field Guide
 
-Independent, mobile-first, read-only public field guide for `zuchiangmai.app`. No official umbrella/voice or endorsement is implied. No account, RSVP, write endpoint, analytics, tracker, external font, or third-party image is used. **Production is live at https://zuchiangmai.app/; the taur.link preview remains noindex.**
+Independent, mobile-first, read-only public preview for `zuchiangmai.app`. No official umbrella/voice or endorsement is implied. No account, RSVP, write endpoint, analytics, tracker, third-party runtime, external font, or third-party image is used.
 
 ## Ownership boundary
 
@@ -51,14 +51,14 @@ This re-fetches public sources, sanitizes them in memory, and emits:
 - `index.html` — complete no-JS agenda, 16-milestone ETH + Longevity rail, details, source links, notices, ETH empty state, and PIT links
 - `schedule.json` — sanitized static fallback
 - `app.js`, `styles.css` — first-party progressive enhancement; local `favicon.svg` and multi-size `favicon.ico`
-- `photos/` — sixteen curated, already-public 4Seas community images at 480/960px; provenance in `data/hero-photos.json` and `/licenses/#photo-sources`
+- `photos/` — sixteen reviewed professional photographs from the 4Seas.org album (Nomad Market #1 + ETH Chiang Mai 2025 at 4Seas, 22/28 Oct 2026) at 480/960/1440px WebP; © 4Seas.org, used with permission (shared by Shaka Lei Kaumaka, 14 Nov 2026) — NOT CC0; provenance in `data/hero-photos.json` and `/licenses/#photo-sources`
 - `ics/<source>-<id>.ics` — an individual downloadable calendar per current event, including no-JS access
 - `licenses/`, `source/` — license statement and corresponding source offer
 - `robots.txt` + meta noindex for the preview
 
 Initial HTML always says **SOURCE SNAPSHOT** until a refresh completes. The client attempts the deployed fixed Worker on manual refresh or roughly every 120 seconds while visible. A schema-valid, non-stale Worker response with every source OK is required for **LIVE · READ-ONLY PROXY**. Network/schema/origin failures keep the current snapshot/last-good data and visibly remove Live. Source fetch and browser render timestamps are separate.
 
-The first-page hero uses a two-frame/two-backdrop **2.4-second gentle continuous shuffle** of sixteen already-public 4Seas community photographs. The first road/ukulele photograph is the no-JS and reduced-motion static fallback. Reduced-motion downloads no extra photo set and hides the motion control; no-JS keeps the complete agenda and one photograph. A visible Pause/Resume control, hidden-tab and offscreen pausing, decorative alt handling, local WebP assets, and per-photo source links are included. No private-Drive, new NOMAD or child imagery is introduced; public availability is not presented as a new consent claim.
+The first-page hero uses a two-frame/two-backdrop **2.4-second gentle continuous shuffle** of sixteen professional photographs chosen from the 4Seas.org album Shaka shared on 14 Nov 2026 (92 Sony ZV-E10 II frames reviewed; picks, reasons and safety exclusions in `/workspace/new-doors-scope/zu-pro-photos/picks.md`). The first photograph (`market-hall`, the wide Nomad Market hall) is the no-JS and reduced-motion static fallback. Reduced-motion downloads no extra photo set and hides the motion control; no-JS keeps the complete agenda and one photograph. A visible Pause/Resume control, hidden-tab and offscreen pausing, decorative alt handling, local WebP assets (480/960 for the stage, 1440 for the wide backdrop) and a caption linking to the credit/permission statement are included. No child imagery, readable private screens, QR-code slides or Ham-family imagery is included; the photographs are © 4Seas.org and are used with permission, not relicensed.
 
 ## Worker deployment status / future parent review
 
