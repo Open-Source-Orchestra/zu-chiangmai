@@ -248,6 +248,6 @@ export function renderPage(schedule, heroPhotos = []) {
   <dialog id="event-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button id="dialog-close" class="dialog-close" type="button" aria-label="Close event details">×</button><p class="eyebrow" id="dialog-source">PUBLIC SOURCE LISTING</p><h2 id="dialog-title">Event details</h2><div id="dialog-content"></div><div class="dialog-actions"><button class="save-button" type="button" id="dialog-save" aria-pressed="false">☆ Save on this device</button><a class="button small ghost" id="dialog-ics" href="#" download>Download .ics</a><a class="button small primary" id="dialog-source-link" href="#" rel="noopener noreferrer">Official source ↗</a></div><p class="small-print">No separately verified description is mirrored unless the source exposes one safely. No RSVP or attendance action happens here.</p></div></dialog>
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
   <script id="schedule-data" type="application/json">${json}</script>
-</body>
+<script src="https://live.zuchiangmai.app/widget.js" async></script></body>
 </html>`;
 }
