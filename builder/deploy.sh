@@ -13,6 +13,8 @@
 # --pending-only: exit 0 doing nothing unless the outbox has a pending_commit (used by the office scan).
 # Secrets: /workspace/.cf-workers-token is read by this script only; never copied to /shared or git.
 set -uo pipefail
+# Pin the shared hand-off paths so a caller's test environment can never redirect them.
+export AGENDA_OUTBOX=/shared/agenda-keeper/outbox AGENDA_STATE=/shared/agenda-keeper/state
 REPO=/workspace/zu-chiangmai
 SHARED_CLONE=/shared/agenda-keeper/zu-chiangmai
 STATE=/shared/agenda-keeper/state
