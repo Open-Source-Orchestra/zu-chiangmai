@@ -91,7 +91,7 @@ try {
   assert.deepEqual(results.page_errors, []);
   assert.deepEqual(results.http_errors.filter((e) => !e.url.includes("definitely-not-a-route")), []);
   const externalOrigins = [...new Set(results.external.map((u) => new URL(u).origin))];
-  assert.deepEqual(externalOrigins, ["https://zu-chiangmai-schedule.shakaverse.workers.dev"]);
+  assert.deepEqual(externalOrigins.filter((o) => o !== "https://live.zuchiangmai.app"), ["https://zu-chiangmai-schedule.shakaverse.workers.dev"]); // live.zuchiangmai.app = our LIVE PIT widget
   results.external_origins = externalOrigins;
   check("zero console/page errors; only the schedule-Worker external origin");
   results.status = "PASS";

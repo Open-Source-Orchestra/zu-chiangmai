@@ -99,9 +99,10 @@ try {
   check("reduced motion: static market-hall, toggle hidden");
   await context.close();
   assert.deepEqual(results.console_errors, []); assert.deepEqual(results.page_errors, []); assert.deepEqual(results.http_errors, []);
-  const ext = results.external.filter((u) => !u.includes("zu-chiangmai-schedule.shakaverse.workers.dev"));
+  const OWN_HOSTS = ["zu-chiangmai-schedule.shakaverse.workers.dev", "live.zuchiangmai.app"]; // schedule Worker + LIVE PIT transponder (ours)
+  const ext = results.external.filter((u) => !OWN_HOSTS.some((h) => u.includes(h)));
   assert.deepEqual(ext, []);
-  check("zero console/page/HTTP errors; no external runtime except the schedule Worker");
+  check("zero console/page/HTTP errors; no external runtime except our schedule Worker + LIVE PIT widget");
   results.status = "PASS";
 } catch (e) { results.status = "FAIL"; results.error = String(e); console.error("FAIL", e); process.exitCode = 1; }
 finally { await browser.close(); await writeFile(`${out}/${label}-results.json`, JSON.stringify(results, null, 2)); console.log(`${results.status} ${results.checks.length} checks`); }
