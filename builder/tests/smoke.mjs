@@ -91,7 +91,8 @@ try {
   assert.deepEqual(results.page_errors, []);
   assert.deepEqual(results.http_errors.filter((e) => !e.url.includes("definitely-not-a-route")), []);
   const externalOrigins = [...new Set(results.external.map((u) => new URL(u).origin))];
-  assert.deepEqual(externalOrigins.filter((o) => o !== "https://live.zuchiangmai.app"), ["https://zu-chiangmai-schedule.shakaverse.workers.dev"]); // live.zuchiangmai.app = our LIVE PIT widget
+  const OWN_ORIGINS = ["https://live.zuchiangmai.app", "https://osodaomeet.opensourceorchestra.org", "https://lang.opensourceorchestra.org"]; // our LIVE PIT widget · OSO theater TV · ʻŌlelo language bridge
+  assert.deepEqual(externalOrigins.filter((o) => !OWN_ORIGINS.includes(o)), ["https://zu-chiangmai-schedule.shakaverse.workers.dev"]);
   results.external_origins = externalOrigins;
   check("zero console/page errors; only the schedule-Worker external origin");
   results.status = "PASS";

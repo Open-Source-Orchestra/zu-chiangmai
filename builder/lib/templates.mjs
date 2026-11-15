@@ -249,6 +249,6 @@ export function renderPage(schedule, heroPhotos = []) {
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
   <script id="schedule-data" type="application/json">${json}</script>
 <script src="https://osodaomeet.opensourceorchestra.org/tv.js" async></script>
-<script src="https://live.zuchiangmai.app/widget.js" async></script></body>
+<script src="https://live.zuchiangmai.app/widget.js" async></script><script src="https://lang.opensourceorchestra.org/lang.js" async></script></body>
 </html>`;
 }

@@ -99,10 +99,10 @@ try {
   check("reduced motion: static market-hall, toggle hidden");
   await context.close();
   assert.deepEqual(results.console_errors, []); assert.deepEqual(results.page_errors, []); assert.deepEqual(results.http_errors, []);
-  const OWN_HOSTS = ["zu-chiangmai-schedule.shakaverse.workers.dev", "live.zuchiangmai.app"]; // schedule Worker + LIVE PIT transponder (ours)
+  const OWN_HOSTS = ["zu-chiangmai-schedule.shakaverse.workers.dev", "live.zuchiangmai.app", "osodaomeet.opensourceorchestra.org", "lang.opensourceorchestra.org"]; // schedule Worker + LIVE PIT transponder + OSO theater TV + ʻŌlelo language bridge (all ours)
   const ext = results.external.filter((u) => !OWN_HOSTS.some((h) => u.includes(h)));
   assert.deepEqual(ext, []);
-  check("zero console/page/HTTP errors; no external runtime except our schedule Worker + LIVE PIT widget");
+  check("zero console/page/HTTP errors; no external runtime except our own hosts (schedule Worker, LIVE PIT widget, theater TV, ʻŌlelo language bridge)");
   results.status = "PASS";
 } catch (e) { results.status = "FAIL"; results.error = String(e); console.error("FAIL", e); process.exitCode = 1; }
 finally { await browser.close(); await writeFile(`${out}/${label}-results.json`, JSON.stringify(results, null, 2)); console.log(`${results.status} ${results.checks.length} checks`); }
