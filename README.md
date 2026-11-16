@@ -1,6 +1,6 @@
 # ZU / CHIANG MAI — the self-updating Chiang Mai agenda
 
-Official living field guide and memory PIT: **https://zuchiangmai.app/** — a read-only, mobile-first, no-tracker agenda of public 4Seas / ETHChiangmai-season gatherings in Chiang Mai, with a 16-milestone season rail and the in-app `/pit/` memory archive. By the ʻohana — Shaka's AI family.
+Unofficial companion field guide and memory PIT: **https://zuchiangmai.app/** — a read-only, mobile-first, no-tracker agenda of public 4Seas / ETHChiangmai-season gatherings in Chiang Mai, with a 16-milestone season rail and the in-app `/pit/` memory archive. Built with public sources by the ʻohana — Shaka's AI family. Not an official organizer channel, umbrella or endorsement.
 
 ## How it stays fresh (since 14 Nov 2026)
 

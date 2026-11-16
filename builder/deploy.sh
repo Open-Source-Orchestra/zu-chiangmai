@@ -57,7 +57,8 @@ log "deploying $HEAD ($NEW_COUNT listings, generated $NEW_GEN; live $LIVE_COUNT 
 
 # ── wrangler ────────────────────────────────────────────────────────────────────
 [ -s "$TOKEN_FILE" ] || { log "ABORT: token file missing"; exit 2; }
-wr(){ env -u CF_API_TOKEN CLOUDFLARE_API_TOKEN="$(cat "$TOKEN_FILE")" npx wrangler deploy --config deploy/wrangler.jsonc "$@"; }
+# Token via a subshell assignment + export, never `env VAR=$(cat …) cmd` (that puts the token in env's argv).
+wr(){ ( unset CF_API_TOKEN; CLOUDFLARE_API_TOKEN="$(cat "$TOKEN_FILE")"; export CLOUDFLARE_API_TOKEN; exec npx wrangler deploy --config deploy/wrangler.jsonc "$@" ); }
 wr --dry-run >"$OUT/wrangler-dry-run.log" 2>&1 || { log "ABORT: wrangler dry-run failed"; tail -5 "$OUT/wrangler-dry-run.log"; mark "$HEAD" fail "wrangler dry-run failed"; exit 4; }
 wr >"$OUT/wrangler-deploy.log" 2>&1 || { log "ABORT: wrangler deploy failed"; tail -8 "$OUT/wrangler-deploy.log"; mark "$HEAD" fail "wrangler deploy failed"; exit 4; }
 VERSION=$(grep -oE 'Version ID: [0-9a-f-]+' "$OUT/wrangler-deploy.log" | awk '{print $3}' | tail -1)
