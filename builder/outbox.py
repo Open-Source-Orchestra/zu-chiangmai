@@ -13,7 +13,7 @@ CLI:
 No secrets are ever written here; every agent on the shared drive can read these files.
 """
 from __future__ import annotations
-import datetime as dt, json, os, pathlib, sys
+import datetime as dt, json, os, pathlib, subprocess, sys
 from zoneinfo import ZoneInfo
 
 BKK = ZoneInfo("Asia/Bangkok")
@@ -193,6 +193,21 @@ def append_pulse(text: str) -> None:
         print(f"pulse append skipped: {exc}", file=sys.stderr)
 
 
+def shipped(pending: str | None, deployed: str) -> bool:
+    """True when the deployed commit IS the pending one or descends from it.
+    The office deploys HEAD, which may sit on top of the keeper's commit (README/tooling commits);
+    an exact-hash match alone left yesterday's and today's pending flags stuck forever (16 Nov 2026)."""
+    if not pending or not deployed:
+        return False
+    if pending == deployed:
+        return True
+    try:
+        return subprocess.run(["git", "-C", str(REPO), "merge-base", "--is-ancestor", pending, deployed],
+                              capture_output=True, timeout=20).returncode == 0
+    except (OSError, subprocess.SubprocessError):
+        return False
+
+
 def main(argv: list[str]) -> int:
     if not argv:
         print(__doc__); return 2
@@ -203,7 +218,7 @@ def main(argv: list[str]) -> int:
         date, commit, ok, *note = rest
         doc = load(date)
         doc.setdefault("deploys", []).append({"at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "commit": commit, "ok": ok == "ok", "note": " ".join(note)})
-        if ok == "ok" and doc.get("pending_commit") == commit:
+        if ok == "ok" and shipped(doc.get("pending_commit"), commit):
             doc["pending_commit"] = None
         save(doc)
         append_pulse(("✅ deployed " if ok == "ok" else "🚨 deploy FAILED ") + commit[:7] + (" · " + " ".join(note) if note else ""))
