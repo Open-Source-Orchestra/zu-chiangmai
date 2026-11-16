@@ -5,14 +5,14 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
 BEGIN:VEVENT
-UID:event-3n265a7v4z76u@app.sola.day
-DTSTAMP:20261115T010012Z
-DTSTART:20261115T080000Z
-DTEND:20261115T140000Z
-SUMMARY:Nomad Market vol.2
+UID:event-3n2czwam6on3g@app.sola.day
+DTSTAMP:20261116T010011Z
+DTSTART:20261123T090000Z
+DTEND:20261123T100000Z
+SUMMARY:Mental Health Series: Stress\, Overthinking & Burnout
 LOCATION:Event Space - 1st Floor 4Seas Nimman
 STATUS:CONFIRMED
-URL:https://sola.day/event/detail/3n265a7v4z76u
+URL:https://sola.day/event/detail/3n2czwam6on3g
 X-ZU-SOURCE:4seas
 END:VEVENT
 END:VCALENDAR
