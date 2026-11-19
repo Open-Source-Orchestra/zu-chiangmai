@@ -45,4 +45,8 @@ The separate `zu-chiangmai-schedule` API Worker is independent and is **not** re
 
 ## Licenses
 
-Code: GPL-3.0-or-later (`LICENSE`). Original words and abstract SVG art: CC0 1.0 (`CC0.txt`). Third-party schedule content stays its owners'. Hero photographs: © 4Seas.org, used with permission — not CC0, not GPL.
+Code: GPL-3.0 (see LICENSE). Songs, lyrics, chords, words, art, links and pages: CC BY-SA 4.0 (see LICENSE-CONTENT). Credit: Shaka Lei Kaumaka and the ʻohana. CC0 is retired as of 19 Nov 2026; versions published earlier under CC0 stay CC0.
+
+Earlier license note (before 19 Nov 2026; any third-party rights or carve-outs in it still apply):
+
+> Code: GPL-3.0-or-later (`LICENSE`). Original words and abstract SVG art: CC0 1.0 (`CC0.txt`). Third-party schedule content stays its owners'. Hero photographs: © 4Seas.org, used with permission — not CC0, not GPL.
