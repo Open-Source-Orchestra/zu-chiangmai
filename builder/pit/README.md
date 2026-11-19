@@ -7,7 +7,7 @@ This is the first native PIT module for the ZuChiangMai field guide: **generatio
 - `index.html`: complete server-independent/no-JS catalog of all 29 reviewed public recordings, direct native audio (`preload="none"`), source/transcript links, item-level captions, provenance, rights/consent and takedown.
 - `manifest.json`: same-origin, sanitized public metadata only. **29 recordings · 191,878 seconds · 53.3 hours · 10 Start here · 11 knowledge / 9 community / 8 music / 1 tutorial · phases 13/5/11.** The UI computes these from the manifest at build time.
 - `app.js` + `styles.css`: progressively enhanced filters, sorting, deep links, one persistent native audio dock, lazy transcript reading, timestamp seeking and explicit spoken-word search.
-- `licenses.html`, `LICENSE.txt`, `CC0.txt`: code is GPL-3.0-or-later; only new original module words/abstract art are CC0. Existing recordings, transcripts, posters, titles, voices, performances and other third-party content retain their source rights. No blanket CC0 claim applies to them.
+- `licenses.html`, `LICENSE.txt`, `LICENSE-CONTENT.txt`: code is GPL-3.0-or-later; new original module words/abstract art are CC BY-SA 4.0 (CC0 before 19 Nov 2026). Existing recordings, transcripts, posters, titles, voices, performances and other third-party content retain their source rights. No blanket CC0 claim applies to them.
 - `source/`: corresponding generator/client source and the local removal list.
 
 ## Zero media copies
@@ -57,6 +57,6 @@ No trackers, analytics, account, cookies, payment/tip/magnet scripts, external f
 
 ## License and source care
 
-New module code: GPL-3.0-or-later. New original module wording and abstract lantern/ridge art: CC0 1.0. Existing 4SeasPIT source content and media retain their owners' rights and source-specific permissions. Public per-person permission receipts are not itemized; this module does not claim independent new consent. Machine transcripts can contain recognition errors; quote with timestamps and source links.
+New module code: GPL-3.0-or-later. New original module wording and abstract lantern/ridge art: CC BY-SA 4.0. Existing 4SeasPIT source content and media retain their owners' rights and source-specific permissions. Public per-person permission receipts are not itemized; this module does not claim independent new consent. Machine transcripts can contain recognition errors; quote with timestamps and source links.
 
 Agenda truth remains at `../#agenda`. The PIT is memory/storytelling, not a competing current-events schedule.
