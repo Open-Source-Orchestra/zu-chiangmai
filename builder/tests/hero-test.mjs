@@ -76,7 +76,7 @@ try {
   assert.match(licText, /© 4Seas\.org — used with permission/); assert.match(licText, /4Seas \/ Zuzalu Chiang Mai/);
   assert.equal(await page.locator("#photo-sources li").count(), 16);
   assert.match(licText, /not.*covered by this site's CC0 or GPL dedications/);
-  check("licenses: 16 credit lines, © 4Seas.org used with permission, explicitly excluded from CC0/GPL");
+  check("licenses: 16 credit lines, © 4Seas.org used with permission, explicitly excluded from CC BY-SA 4.0/GPL");
   await context.close();
   // 3. no-JS mobile
   context = await browser.newContext({ viewport: { width: 390, height: 844 }, javaScriptEnabled: false });
