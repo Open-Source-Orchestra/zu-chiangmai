@@ -5,14 +5,14 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
 BEGIN:VEVENT
-UID:event-3mzksheqjacir@app.sola.day
-DTSTAMP:20261120T010012Z
-DTSTART:20261120T090000Z
-DTEND:20261120T110000Z
-SUMMARY:Asian Daughter Wound + Relationships
+UID:event-3n2prgb2ffh3g@app.sola.day
+DTSTAMP:20261121T010010Z
+DTSTART:20261123T100000Z
+DTEND:20261123T110000Z
+SUMMARY:Hardware week event 1
 LOCATION:Conference Room - 3rd Floor 4Seas Nimman
 STATUS:CONFIRMED
-URL:https://sola.day/event/detail/3mzksheqjacir
+URL:https://sola.day/event/detail/3n2prgb2ffh3g
 X-ZU-SOURCE:4seas
 END:VEVENT
 END:VCALENDAR

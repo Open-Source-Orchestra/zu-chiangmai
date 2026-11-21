@@ -5,14 +5,14 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
 BEGIN:VEVENT
-UID:event-3mxtplehoxa35@app.sola.day
-DTSTAMP:20261120T010012Z
-DTSTART:20261120T073000Z
-DTEND:20261120T093000Z
-SUMMARY:Black Tea Tasting
-LOCATION:Gallery Space - 1st Floor 4Seas Nimman
+UID:event-3n2pr3hnl6b3g@app.sola.day
+DTSTAMP:20261121T010010Z
+DTSTART:20261127T100000Z
+DTEND:20261127T110000Z
+SUMMARY:Hardware week event 5
+LOCATION:Event Space - 1st Floor 4Seas Nimman
 STATUS:CONFIRMED
-URL:https://sola.day/event/detail/3mxtplehoxa35
+URL:https://sola.day/event/detail/3n2pr3hnl6b3g
 X-ZU-SOURCE:4seas
 END:VEVENT
 END:VCALENDAR

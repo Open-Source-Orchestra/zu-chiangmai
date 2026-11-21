@@ -5,14 +5,14 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
 BEGIN:VEVENT
-UID:event-3s2y2qz7mubzn@app.sola.day
-DTSTAMP:20261120T010012Z
-DTSTART:20261120T040000Z
-DTEND:20261120T060000Z
-SUMMARY:Language & Culture Exchange
+UID:event-3n2pqz37pzz3g@app.sola.day
+DTSTAMP:20261121T010010Z
+DTSTART:20261124T100000Z
+DTEND:20261124T110000Z
+SUMMARY:Hardware week event 2
 LOCATION:Event Space - 1st Floor 4Seas Nimman
 STATUS:CONFIRMED
-URL:https://sola.day/event/detail/3s2y2qz7mubzn
+URL:https://sola.day/event/detail/3n2pqz37pzz3g
 X-ZU-SOURCE:4seas
 END:VEVENT
 END:VCALENDAR
