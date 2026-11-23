@@ -6,10 +6,10 @@ METHOD:PUBLISH
 X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
 BEGIN:VEVENT
 UID:event-3n2pr3hnl6b3g@app.sola.day
-DTSTAMP:20261122T010010Z
+DTSTAMP:20261123T010009Z
 DTSTART:20261127T100000Z
 DTEND:20261127T110000Z
-SUMMARY:Hardware week event 5
+SUMMARY:Wearable Week Roundup: What the week's data taught us
 LOCATION:Event Space - 1st Floor 4Seas Nimman
 STATUS:CONFIRMED
 URL:https://sola.day/event/detail/3n2pr3hnl6b3g

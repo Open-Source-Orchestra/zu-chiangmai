@@ -6,11 +6,11 @@ METHOD:PUBLISH
 X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
 BEGIN:VEVENT
 UID:event-3n2prgb2ffh3g@app.sola.day
-DTSTAMP:20261122T010010Z
-DTSTART:20261123T100000Z
-DTEND:20261123T110000Z
-SUMMARY:Hardware week event 1
-LOCATION:Conference Room - 3rd Floor 4Seas Nimman
+DTSTAMP:20261123T010009Z
+DTSTART:20261123T080000Z
+DTEND:20261123T090000Z
+SUMMARY:Wearables 101: What should you actually wear?
+LOCATION:Event Space - 1st Floor 4Seas Nimman
 STATUS:CONFIRMED
 URL:https://sola.day/event/detail/3n2prgb2ffh3g
 X-ZU-SOURCE:4seas
