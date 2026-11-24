@@ -5,14 +5,14 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
 BEGIN:VEVENT
-UID:event-3mzuetue2brir@app.sola.day
-DTSTAMP:20261123T010009Z
-DTSTART:20261123T070000Z
-DTEND:20261123T080000Z
-SUMMARY:MOVE STRONG – Strength & Quality Movement Session
+UID:event-3n2xqsjimo73g@app.sola.day
+DTSTAMP:20261124T010013Z
+DTSTART:20261210T130000Z
+DTEND:20261210T163000Z
+SUMMARY:Preparing for Monad Hackathon
 LOCATION:Event Space - 1st Floor 4Seas Nimman
 STATUS:CONFIRMED
-URL:https://sola.day/event/detail/3mzuetue2brir
+URL:https://sola.day/event/detail/3n2xqsjimo73g
 X-ZU-SOURCE:4seas
 END:VEVENT
 END:VCALENDAR

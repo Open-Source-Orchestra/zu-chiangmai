@@ -5,14 +5,14 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
 BEGIN:VEVENT
-UID:event-3n2czwam6on3g@app.sola.day
-DTSTAMP:20261123T010009Z
-DTSTART:20261123T090000Z
-DTEND:20261123T100000Z
-SUMMARY:Mental Health Series: Stress\, Overthinking & Burnout
+UID:event-3n2xwtd5nqp3g@app.sola.day
+DTSTAMP:20261124T010013Z
+DTSTART:20261124T030000Z
+DTEND:20261124T040000Z
+SUMMARY:yoga movement flow
 LOCATION:Event Space - 1st Floor 4Seas Nimman
 STATUS:CONFIRMED
-URL:https://sola.day/event/detail/3n2czwam6on3g
+URL:https://sola.day/event/detail/3n2xwtd5nqp3g
 X-ZU-SOURCE:4seas
 END:VEVENT
 END:VCALENDAR

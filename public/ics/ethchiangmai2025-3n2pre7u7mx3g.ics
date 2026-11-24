@@ -6,10 +6,11 @@ METHOD:PUBLISH
 X-WR-CALNAME:ZU Chiang Mai — Public Field Guide
 BEGIN:VEVENT
 UID:event-3n2pre7u7mx3g@app.sola.day
-DTSTAMP:20261123T010009Z
-DTSTART:20261230T110000Z
-DTEND:20261230T140000Z
-SUMMARY:🎉 Open Source Orchestra Live Concert Edition @ 4Seas
+DTSTAMP:20261124T010013Z
+DTSTART:20261230T164200Z
+DTEND:20261230T181100Z
+SUMMARY:🎉🔐 Open Source Orchestra Live Concert Edition → Cypherpunk 
+ New Year's Eve Jam @ 4Seas
 LOCATION:4Seas\, 1st Floor Event Space
 STATUS:CONFIRMED
 URL:https://sola.day/event/detail/3n2pre7u7mx3g
